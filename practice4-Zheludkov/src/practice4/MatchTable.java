@@ -41,7 +41,6 @@ public class MatchTable extends JFrame{
         for(int i = 0; i < 12; i++){
             mainPanel[i] = new JPanel();
             add(mainPanel[i]);
-
         }
 
         //Создаём надпись c "Real Madrid CF"
