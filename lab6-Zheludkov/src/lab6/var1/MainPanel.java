@@ -13,8 +13,9 @@ public class MainPanel extends JFrame{
     private JTextField numEnter;
     private JButton ok;
 
-    private String rightNumber = "34";
+    private String rightNumber = "13";
     private int inputNumber = 0;
+    private short moveCounter = 0;
 
     public MainPanel(){
         super("Quiz");
@@ -36,30 +37,43 @@ public class MainPanel extends JFrame{
         mainPanel[4].add(numEnter, BorderLayout.SOUTH);
         numEnter.setFont(new Font("Dialog", Font.PLAIN, 18));
 
+
+
         ok = new JButton ("Ok");
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                        //проверка на границу интервала и на integer
                         try {
-
                             if(Integer.parseInt(numEnter.getText()) < 0  || Integer.parseInt(numEnter.getText()) > 20)
                             {
-                                JOptionPane.showMessageDialog(null, "Number must be > 20 and < 0");
+                                JOptionPane.showMessageDialog(mainPanel[4], "Number must be > 20 and < 0");
                                 numEnter.setText("");
                                 return;
                             }
                         } catch (NumberFormatException ex) {
-                            JOptionPane.showMessageDialog(null, "This is not integer number!");
+                            JOptionPane.showMessageDialog(mainPanel[4], "This is not integer number!");
                             numEnter.setText("");
                             return;
                         }
+                        //если равно, больше, меньше.
                 if(numEnter.getText().equals(rightNumber)){
-                    JOptionPane.showMessageDialog(null, "You are right!");
+                    JOptionPane.showMessageDialog(mainPanel[4], "You are right!");
+                    System.exit(1);
+                    numEnter.setText("");
+                }
+                else if(Integer.parseInt(numEnter.getText()) > Integer.parseInt(rightNumber)){
+                    JOptionPane.showMessageDialog(mainPanel[4], "You are not right! The hidden number < than the entered one");
                     numEnter.setText("");
                 }
                 else{
-                    JOptionPane.showMessageDialog(null, "You are not right!");
-                    numEnter.setText("");
+                    JOptionPane.showMessageDialog(mainPanel[4], "You are not right! The hidden number > than the entered one");
+                }
+                moveCounter+=1;
+                if(moveCounter == 3){
+                    JOptionPane.showMessageDialog(mainPanel[4], "No more attempts! The hidden number is 13!" +
+                            " See you next time!");
+                    System.exit(1);
                 }
             }
         });
@@ -67,5 +81,7 @@ public class MainPanel extends JFrame{
 
 
         setVisible(true);
+        JOptionPane.showMessageDialog(mainPanel[4], "Rules:\nYou have 3 attempts. The number is between 0 and 20." +
+                " Good luck!");
     }
 }
