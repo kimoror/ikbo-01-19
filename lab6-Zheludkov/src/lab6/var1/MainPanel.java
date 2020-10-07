@@ -12,6 +12,7 @@ public class MainPanel extends JFrame{
     private JLabel head;
     private JTextField numEnter;
     private JButton ok;
+
     private String rightNumber = "34";
     private int inputNumber = 0;
 
@@ -39,11 +40,26 @@ public class MainPanel extends JFrame{
         ok.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                        try {
+
+                            if(Integer.parseInt(numEnter.getText()) < 0  || Integer.parseInt(numEnter.getText()) > 20)
+                            {
+                                JOptionPane.showMessageDialog(null, "Number must be > 20 and < 0");
+                                numEnter.setText("");
+                                return;
+                            }
+                        } catch (NumberFormatException ex) {
+                            JOptionPane.showMessageDialog(null, "This is not integer number!");
+                            numEnter.setText("");
+                            return;
+                        }
                 if(numEnter.getText().equals(rightNumber)){
                     JOptionPane.showMessageDialog(null, "You are right!");
+                    numEnter.setText("");
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "You are not right!");
+                    numEnter.setText("");
                 }
             }
         });
