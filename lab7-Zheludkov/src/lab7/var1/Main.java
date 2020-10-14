@@ -24,9 +24,15 @@ public class Main {
 
         int rndNum = (int)(Math.random() * 100);
         if(arr.contains(rndNum))
-            System.out.print("\nArray contain " + rndNum);
+            System.out.println("\nArray contain " + rndNum);
         else
-            System.out.print("\nArray doesn`t contain " + rndNum);
+            System.out.println("\nArray doesn`t contain " + rndNum);
+
+        System.out.println("Element with index 4 is 55 now:");
+        arr.set(4, 55);
+        print(arr);
+
+        System.out.print("\nThe element with index 1 is: " + arr.get(1));
 
     }
 }
