@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0bbada97-6dfb-42d4-b1c0-831afafe3374" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lab7-zheludkov.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab7-zheludkov/lab7/var1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lab7/var1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice7-Zheludkov/src/practice7/var3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice7-Zheludkov/src/practice7/var3/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1irLYZost5UmHTVB9cPZTnbUCa6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lab7.var1.Main" />
+      <module name="lab7-zheludkov" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lab7.var1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bbada97-6dfb-42d4-b1c0-831afafe3374" name="Default Changelist" comment="" />
+      <created>1602660817809</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602660817809</updated>
+      <workItem from="1602661143213" duration="3651000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="20" key="#Project_Structure" timestamp="1602661236260">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state x="0" y="20" key="#Project_Structure/0.20.1920.1060@0.20.1920.1060" timestamp="1602661236260" />
+    <state width="1860" height="262" key="GridCell.Tab.0.bottom" timestamp="1602665420625">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state width="1860" height="262" key="GridCell.Tab.0.bottom/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420625" />
+    <state width="1860" height="262" key="GridCell.Tab.0.center" timestamp="1602665420623">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state width="1860" height="262" key="GridCell.Tab.0.center/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420623" />
+    <state width="1860" height="262" key="GridCell.Tab.0.left" timestamp="1602665420621">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state width="1860" height="262" key="GridCell.Tab.0.left/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420621" />
+    <state width="1860" height="262" key="GridCell.Tab.0.right" timestamp="1602665420624">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state width="1860" height="262" key="GridCell.Tab.0.right/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420624" />
+    <state x="630" y="259" key="refactoring.ChangeSignatureDialog" timestamp="1602664470680">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state x="630" y="259" key="refactoring.ChangeSignatureDialog/0.20.1920.1060@0.20.1920.1060" timestamp="1602664470680" />
+  </component>
+</project>

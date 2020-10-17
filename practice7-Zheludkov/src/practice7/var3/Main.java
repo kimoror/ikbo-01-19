@@ -23,7 +23,7 @@ public class Main {
         }
 
         int i = 0;
-        //TODO  прописать условие с 0
+
         while (i < 106 && player1.peekFirst() != null && player2.peekFirst() != null) {
             if(player1.peekFirst() > player2.peekFirst() && !(player1.peekFirst() == 9 && player2.peekFirst() == 0)||
                     (player1.peekFirst() == 0 && player2.peekFirst() == 9)){
