@@ -35,12 +35,14 @@ public class WaitList<E> implements IWaitList<E>{
     public boolean contains(E element) {
         if(content.contains(element))
             return true;
+        return false;
     }
 
     @Override
     public boolean containsAll(Collection<E> c) {
         if(content.containsAll(c))
-        return true;
+            return true;
+        return false;
     }
 
     @Override
