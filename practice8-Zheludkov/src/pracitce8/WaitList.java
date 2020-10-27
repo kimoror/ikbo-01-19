@@ -47,6 +47,7 @@ public class WaitList<E> implements IWaitList<E>{
     public boolean isEmpty() {
         if(content.isEmpty())
             return true;
+        return false;
     }
 
     @Override
