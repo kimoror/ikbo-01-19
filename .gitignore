@@ -5,7 +5,9 @@ out/
 !**/src/ru/mirea/**
 !**/src/**
 
+
 ### IntelliJ IDEA ###
+*.idea
 .idea
 *.iws
 *.iml
