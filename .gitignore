@@ -1,0 +1,29 @@
+### Folders ###
+HELP.md
+target/
+out/
+!**/src/ru/mirea/**
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+
+### Text files ###
+*.txt
+
+
+### macOS ###
+.DS_Store
