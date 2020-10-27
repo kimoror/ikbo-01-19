@@ -10,4 +10,5 @@ public interface IWaitList<E>{
    boolean contains(E element);
    boolean containsAll(Collection<E> c);
    boolean isEmpty();
+   d
 }
