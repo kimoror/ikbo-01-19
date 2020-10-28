@@ -8,6 +8,7 @@ public class Main {
         //Task4.exceptionDemo();
         //Task5.printMessage(null);
         //Task6.getKey();
-        Task7.getKey();
+        //Task7.getKey();
+        Task8.getKey();
     }
 }
