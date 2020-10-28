@@ -5,6 +5,8 @@ public class Main {
         //Exception1.exeptionDemo();
         //Exception2.exceptionDemo();
         //Task3.exceptionDemo();
-        Task4.exceptionDemo();
+        //Task4.exceptionDemo();
+        //Task5.printMessage(null);
+
     }
 }
