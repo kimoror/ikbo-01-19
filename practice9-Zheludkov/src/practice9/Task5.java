@@ -15,6 +15,6 @@ public class Task5 {
             if(key == null){
                 throw new NullPointerException("null key in getDetails");
             }
-        return key;
+        return "data for " + key;
     }
 }
