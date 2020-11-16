@@ -1,6 +1,6 @@
 package practice16;
 
-public class LinkedList<E> im {
+public class LinkedList<E> {
 
     class Node {
         E value;
