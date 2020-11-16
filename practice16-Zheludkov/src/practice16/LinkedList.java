@@ -1,21 +1,34 @@
 package practice16;
 
-public class LinkedList<E> {
+public class LinkedList<E> im {
 
-    class Node{
+    class Node {
         E value;
         Node next;
 
-        public Node(E value){
+        public Node(E value) {
             this.value = value;
         }
     }
 
-    private Node first, last;
-    private int size;
+    Node first, last;
+    int size;
 
-    public LinkedList(){
+    public LinkedList() {
         size = 0;
+    }
+
+    public boolean setFirst(E object) {
+        first = new Node(object);
+        return true;
+    }
+
+    public Node getFirst() {
+        return first;
+    }
+
+    public Node getLast() {
+        return last;
     }
 
     public boolean add(E object){
@@ -52,8 +65,24 @@ public class LinkedList<E> {
         return false;
     }
 
+    public boolean removeAll(){
+        first = null;
+        return true;
+    }
+
     public int getSize() {
         return size;
+    }
+
+    public boolean viewList(){
+        if(first == null)
+            return false;
+        Node current = first;
+        for(int i=0; i<size; i++){
+            System.out.println(current.value);
+            current = current.next;
+        }
+        return true;
     }
 
 }
