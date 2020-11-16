@@ -1,31 +1,10 @@
 package practice16;
 
-public abstract class Item {
-   final String name;
-   final String descpription;
-   final int cost;
+public interface Item {
 
-    public Item(String name, String desctiption) {
-        this.name = name;
-        this.descpription = desctiption;
-        this.cost = 0;
-    }
+    public int getCost();
 
-    public Item(String name, String desctiption, int cost) {
-        this.name = name;
-        this.descpription = desctiption;
-        this.cost = cost;
-    }
+    public String getName();
 
-    public int getCost() {
-        return cost;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDescpription() {
-        return descpription;
-    }
+    public String getDescpription();
 }

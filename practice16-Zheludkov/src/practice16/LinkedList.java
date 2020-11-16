@@ -5,7 +5,6 @@ public class LinkedList<E> {
     class Node {
         E value;
         Node next;
-
         public Node(E value) {
             this.value = value;
         }
@@ -48,7 +47,7 @@ public class LinkedList<E> {
         Node current = first;
         if(first == null)
             return false;
-        else if(first.value ==delValue){
+        else if(first.value == delValue){
             first = first.next;
             size--;
             return true;
@@ -83,6 +82,15 @@ public class LinkedList<E> {
             current = current.next;
         }
         return true;
+    }
+
+    public E[] toArray(){
+        Object[] result = new Object[size];
+        int j = 0;
+        for(Node i = first; i != null; i = i.next){
+            result[j++] = i.value;
+        }
+        return (E[])result;
     }
 
 }
