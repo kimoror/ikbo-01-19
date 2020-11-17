@@ -1,6 +1,7 @@
 package practice16;
 
 
+import java.net.Inet4Address;
 import java.util.ArrayList;
 
 public class Test {
@@ -81,6 +82,13 @@ public class Test {
             System.out.println(itemsArray[i].getName()+": "+itemsArray[i].getCost());
         }
         System.out.println("\nCost of Drink4: " + order.itemsQuantity("Drink4"));
+
+        System.out.println("\n======================================================\n" +
+                "\nInternet orders:\n");
+        InternetOrder internetOrder = new InternetOrder();
+        internetOrder.add("address1" ,order);
+        System.out.println("Total cost:" + internetOrder.costTotal());
+        System.out.println("Intenet order size: "+internetOrder.getOrdersSize());
 
     }
 }
