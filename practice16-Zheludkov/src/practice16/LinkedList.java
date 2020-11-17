@@ -1,5 +1,7 @@
 package practice16;
 
+import java.util.Collection;
+
 public class LinkedList<E> {
 
     class Node {
@@ -16,6 +18,33 @@ public class LinkedList<E> {
 
     public LinkedList() {
         size = 0;
+    }
+
+    public LinkedList(Collection<? extends E> c){
+        addAll(c.size(), c);
+    }
+
+    public LinkedList(E[] itemArray){
+        addAll(itemArray);
+    }
+
+    public void addAll(int index, Collection<? extends E> c){
+        cmpIndexAndSize(index);
+        for (E it: c) {
+            add(it);
+        }
+    }
+
+    public void addAll(E[] itemArray){
+        cmpIndexAndSize(itemArray.length);
+        for(int i = 0; i < itemArray.length; i++ ){
+            add(itemArray[i]);
+        }
+    }
+
+    public void cmpIndexAndSize(int index){
+        if(!(index >= 0))
+            throw new IndexOutOfBoundsException();
     }
 
     public boolean setFirst(E object) {
