@@ -117,13 +117,25 @@ public class LinkedList<E> {
         return true;
     }
 
+    @SuppressWarnings("unchecked")
     public E[] toArray(){
         Object[] result = new Object[size];
-        int j = 0;
-        for(Node i = first; i != null; i = i.next){
-            result[j++] = i.value;
+        Node i = first;
+        for( int count = 0; count < size; count++){
+            result[count++] = i.value;
+            i = i.next;
         }
         return (E[])result;
+
+//        Object[] result = new Object[size];
+//        int i = 0;
+//
+//        for (Node x = first; x != null; x = x.next) {
+//            result[i++] = x.value;
+//        }
+//
+//        return (E[]) result;
     }
+
 
 }

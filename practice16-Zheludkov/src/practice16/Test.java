@@ -5,19 +5,19 @@ import java.util.ArrayList;
 
 public class Test {
     public static void main(String[] args) {
-        LinkedList test = new LinkedList();
-        test.add(1);
-        test.add(2);
-        test.add(20);
-        test.add(32);
-        test.viewList();
-
-        System.out.println("List after remove:");
-        test.remove(20);
-        test.add(23);
-        test.add(10);
-        test.add(89);
-        test.viewList();
+//        LinkedList test = new LinkedList();
+//        test.add(1);
+//        test.add(2);
+//        test.add(20);
+//        test.add(32);
+//        test.viewList();
+//
+//        System.out.println("List after remove:");
+//        test.remove(20);
+//        test.add(23);
+//        test.add(10);
+//        test.add(89);
+//        test.viewList();
 //
 //        System.out.println("Last element:"+test.last.value);
 //        System.out.println("Last.prev:"+test.last.prev.value);
@@ -58,7 +58,17 @@ public class Test {
 //        //Add collenction to exist LinkedList
 //        test.addAll(itemsCollection.toArray());
 //        test.viewList();
+//  }
+        Item drink01 = new Drink("Drink1", "Drink1_description", 100);
+        Item drink02 = new Drink("Drink2", "Drink2_description", 114);
+        Item drink03 = new Drink("Drink3", "Drink3_description", 99);
+        Item drink04 = new Drink("Drink4", "Drink4_description", 10234);
 
+        RestaurantOrder order = new RestaurantOrder();
+        order.add(drink01);
+        order.add(drink02);
+        order.add(drink03);
+        order.add(drink04);
+        System.out.println("Cost total:" + order.costTotal());
     }
-
 }

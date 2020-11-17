@@ -2,12 +2,12 @@ package practice16;
 
 import practice16.LinkedList.Node;
 
+import java.lang.management.BufferPoolMXBean;
 import java.util.Arrays;
 import java.util.Collection;
 
 public class OrderManager implements Order{
     LinkedList<Item> tableOrder;
-    Node current;
 
     public OrderManager(){
         tableOrder = new LinkedList<>();
@@ -42,7 +42,15 @@ public class OrderManager implements Order{
 
     @Override
     public int costTotal() {
-        return (int) Arrays.stream(tableOrder.toArray()).mapToInt(Item::getCost).sum();
+        int cost = 0;
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++){
+            bufferItem = (Item) bufferNode.value;
+            cost += bufferItem.getCost();
+            bufferNode=bufferNode.next;
+        }
+        return cost;
     }
 
     @Override

@@ -10,12 +10,22 @@ public final class Drink implements Item {
         this.name = name;
         this.descpription = desctiption;
         this.cost = 0;
+        if(name.equals(""))
+            throw new IllegalArgumentException();
+        if(desctiption.equals(""))
+            throw new IllegalArgumentException();
     }
 
     public Drink(String name, String desctiption, int cost) {
         this.name = name;
         this.descpription = desctiption;
         this.cost = cost;
+        if(cost < 0)
+            throw new IllegalArgumentException();
+        if(name.equals(""))
+            throw new IllegalArgumentException();
+        if(desctiption.equals(""))
+            throw new IllegalArgumentException();
     }
 
     public int getCost() {
