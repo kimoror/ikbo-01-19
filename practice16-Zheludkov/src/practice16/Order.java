@@ -3,13 +3,19 @@ package practice16;
 public interface Order {
     public boolean add(Item menuItem);
 
-    public boolean deleteItem(String name);
-
-    public boolean deleteAllItems();
-
-    public boolean SortedItemsByCost();
+    public Object[] SortedItemsByCost();
 
     public int costTotal();
 
-    public Object[] getItems();
+    public Item[] getItems();
+
+    public Object[] itemsNames();
+
+    int itemsQuantity(String itemName);
+
+    int itemsQuantity(Item item);
+
+    boolean remove (String name);
+
+    boolean removeAll();
 }
