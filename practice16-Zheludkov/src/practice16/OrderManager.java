@@ -45,8 +45,10 @@ public class OrderManager implements Order{
         return (int) Arrays.stream(tableOrder.toArray()).mapToInt(Item::getCost).sum();
     }
 
+    @Override
     public int countOfItems(){return tableOrder.getSize();}
 
+    @Override
     public int countOf(String itemName){
         int count = 0;
 

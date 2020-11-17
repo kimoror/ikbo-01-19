@@ -15,7 +15,11 @@ public interface Order {
 
     int itemsQuantity(Item item);
 
-    boolean remove (String name);
+    boolean remove(String name);
+
+    public int countOfItems();
 
     boolean removeAll();
+
+    public int countOf(String itemName);
 }
