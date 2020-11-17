@@ -3,13 +3,13 @@ package practice16;
 public interface Order {
     public boolean add(Item menuItem);
 
-    public Object[] SortedItemsByCost();
+    public Item[] SortedItemsByCost();
 
     public int costTotal();
 
-    public Item[] getItems();
+    public LinkedList getItems();
 
-    public Object[] itemsNames();
+    public String[] itemsNames();
 
     int itemsQuantity(String itemName);
 

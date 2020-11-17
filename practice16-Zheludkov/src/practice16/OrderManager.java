@@ -22,10 +22,13 @@ public class OrderManager implements Order{
 
     @Override
     public boolean remove(String name) {
-        for(Item item : tableOrder.toArray()){
-            if(item.getName().equals(name)){
-                return tableOrder.remove(item);
-            }
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            bufferItem = (Item) bufferNode.value;
+            if(bufferItem.getName().equals(name))
+                return tableOrder.remove(bufferItem);
+            bufferNode = bufferNode.next;
         }
         return false;
     }
@@ -36,8 +39,27 @@ public class OrderManager implements Order{
     }
 
     @Override
-    public Object[] SortedItemsByCost() {
-        return Arrays.stream(tableOrder.toArray()).sorted((d1,d2) -> (int) (d1.getCost() - d2.getCost())).toArray();
+    public Item[] SortedItemsByCost() {
+
+        if(tableOrder.getSize() == 0)
+            throw new NullPointerException();
+        Item[] itemsArray = new Item[tableOrder.getSize()];
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            itemsArray[i]= (Item) bufferNode.value;
+            bufferNode = bufferNode.next;
+        }
+
+        for(int i = itemsArray.length -1; i >=1; i--){
+            for(int j = 0; j < i; j++)
+                if(itemsArray[i].getCost() > itemsArray[j].getCost()){
+                    Item bufferChange = itemsArray[i];
+                    itemsArray[i] = itemsArray[j];
+                    itemsArray[j] = bufferChange;
+                }
+        }
+       //return Arrays.stream(tableOrder.toArray()).sorted((d1,d2) -> (int) (d1.getCost() - d2.getCost())).toArray();
+        return itemsArray;
     }
 
     @Override
@@ -59,34 +81,51 @@ public class OrderManager implements Order{
     @Override
     public int countOf(String itemName){
         int count = 0;
-
-        for(Item item : tableOrder.toArray()){
-            if(item.getName().equals(itemName))
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            bufferItem = (Item) bufferNode.value;
+            if(bufferItem.getName().equals(itemName))
                 count++;
+            bufferNode = bufferNode.next;
         }
         return count;
     }
 
     @Override
-    public Item[] getItems() {
+    public LinkedList getItems() {
         if(tableOrder.getSize() == 0)
             throw new NullPointerException();
-        return tableOrder.toArray();
+        return tableOrder;
     }
 
     @Override
-    public Object[] itemsNames() {
-        return Arrays.stream(tableOrder.toArray()).map(Item::getName).distinct().toArray();
+    public String[] itemsNames() {
+        if(tableOrder.getSize() == 0)
+            throw new NullPointerException();
+        String[] itemsNamesArray = new String[tableOrder.getSize()];
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            bufferItem = (Item) bufferNode.value;
+            itemsNamesArray[i] = bufferItem.getName();
+            bufferNode = bufferNode.next;
+        }
+        return itemsNamesArray;
     }
 
     @Override
     public int itemsQuantity(String itemName) {
         int cost = -1;
-        for(Item item : tableOrder.toArray()){
-            if(item.getName().equals(itemName)){
-                cost = item.getCost();
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            bufferItem = (Item) bufferNode.value;
+            if(bufferItem.getName().equals(itemName)){
+                cost = bufferItem.getCost();
                 break;
             }
+            bufferNode = bufferNode.next;
         }
         return cost;
     }
@@ -94,11 +133,15 @@ public class OrderManager implements Order{
     @Override
     public int itemsQuantity(Item itemObj) {
         int cost = -1;
-        for(Item item : tableOrder.toArray()){
-            if(item.equals(itemObj)){
-                cost = item.getCost();
+        Item bufferItem;
+        Node bufferNode = tableOrder.getFirst();
+        for(int i = 0; i < tableOrder.getSize(); i++) {
+            bufferItem = (Item) bufferNode.value;
+            if(bufferItem.equals(itemObj)){
+                cost = itemObj.getCost();
                 break;
             }
+            bufferNode = bufferNode.next;
         }
         return cost;
     }

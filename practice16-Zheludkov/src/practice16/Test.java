@@ -70,5 +70,17 @@ public class Test {
         order.add(drink03);
         order.add(drink04);
         System.out.println("Cost total:" + order.costTotal());
+        System.out.println("Count of items:" + order.countOfItems());
+        System.out.println("Number of Drink1: "+order.countOf("Drink1"));
+        order.remove("Drink2");
+        System.out.println("Count of items after remove Drink2: " + order.countOfItems());
+        System.out.println("Number of Drink2: "+order.countOf("Drink2"));
+        Item[] itemsArray = order.SortedItemsByCost();
+        System.out.println("\nSorted by cost:");
+        for(int i = 0; i < itemsArray.length; i++){
+            System.out.println(itemsArray[i].getName()+": "+itemsArray[i].getCost());
+        }
+        System.out.println("\nCost of Drink4: " + order.itemsQuantity("Drink4"));
+
     }
 }
