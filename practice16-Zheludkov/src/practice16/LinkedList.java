@@ -5,6 +5,7 @@ public class LinkedList<E> {
     class Node {
         E value;
         Node next;
+        Node prev;
         public Node(E value) {
             this.value = value;
         }
@@ -36,8 +37,11 @@ public class LinkedList<E> {
             last = first;
         }
         else{
-            last.next = new Node(object);
-            last = last.next;
+            Node newNode = new Node(object);
+            newNode.prev = last;
+            last.next = newNode;
+            last = newNode;
+            last.next = first;
         }
         size++;
         return true;
