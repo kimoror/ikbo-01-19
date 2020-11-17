@@ -5,19 +5,18 @@ import practice16.LinkedList.Node;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class TablesOrderManager implements Order{
+public class OrderManager implements Order{
     LinkedList<Item> tableOrder;
     Node current;
 
-    public TablesOrderManager(){
+    public OrderManager(){
         tableOrder = new LinkedList<>();
     }
-    public TablesOrderManager(Item[] itemArray){tableOrder = new LinkedList<>(itemArray);}
-    public TablesOrderManager(Collection<? extends Item> c){tableOrder = new LinkedList<>(c);}
+    public OrderManager(Item[] itemArray){tableOrder = new LinkedList<>(itemArray);}
+    public OrderManager(Collection<? extends Item> c){tableOrder = new LinkedList<>(c);}
 
     @Override
     public boolean add(Item menuItem) {
-        //tableOrder.first.value.getName();
         return tableOrder.add(menuItem);
     }
 
@@ -46,14 +45,28 @@ public class TablesOrderManager implements Order{
         return (int) Arrays.stream(tableOrder.toArray()).mapToInt(Item::getCost).sum();
     }
 
+    public int countOfItems(){return tableOrder.getSize();}
+
+    public int countOf(String itemName){
+        int count = 0;
+
+        for(Item item : tableOrder.toArray()){
+            if(item.getName().equals(itemName))
+                count++;
+        }
+        return count;
+    }
+
     @Override
     public Item[] getItems() {
+        if(tableOrder.getSize() == 0)
+            throw new NullPointerException();
         return tableOrder.toArray();
     }
 
     @Override
     public Object[] itemsNames() {
-        return Arrays.stream(tableOrder.toArray()).map(Item::getName).toArray();
+        return Arrays.stream(tableOrder.toArray()).map(Item::getName).distinct().toArray();
     }
 
     @Override
