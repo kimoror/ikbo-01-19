@@ -3,6 +3,7 @@ package practice16;
 import practice16.LinkedList.Node;
 
 import java.util.Arrays;
+import java.util.Collection;
 
 public class TablesOrderManager implements Order{
     LinkedList<Item> tableOrder;
@@ -11,6 +12,8 @@ public class TablesOrderManager implements Order{
     public TablesOrderManager(){
         tableOrder = new LinkedList<>();
     }
+    public TablesOrderManager(Item[] itemArray){tableOrder = new LinkedList<>(itemArray);}
+    public TablesOrderManager(Collection<? extends Item> c){tableOrder = new LinkedList<>(c);}
 
     @Override
     public boolean add(Item menuItem) {
