@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bbada97-6dfb-42d4-b1c0-831afafe3374" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lab7-zheludkov.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab7-zheludkov/lab7/var1/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lab7/var1/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../practice7-Zheludkov/src/practice7/var3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../practice7-Zheludkov/src/practice7/var3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab6-Zheludkov/out/production/lab6-Zheludkov/lab6/var1/MainPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab6-Zheludkov/out/production/lab6-Zheludkov/lab6/var1/MainPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice6-Желудков/out/production/practice6-Желудков/practice6/var1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../practice6-Желудков/out/production/practice6-Желудков/practice6/var1/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practice7-Zheludkov" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -65,17 +63,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -90,7 +77,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602660817809</updated>
-      <workItem from="1602661143213" duration="3651000" />
+      <workItem from="1602661143213" duration="2966000" />
+      <workItem from="1602665423838" duration="38000" />
+      <workItem from="1603175827685" duration="96000" />
     </task>
     <servers />
   </component>
@@ -102,22 +91,30 @@
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
     <state x="0" y="20" key="#Project_Structure/0.20.1920.1060@0.20.1920.1060" timestamp="1602661236260" />
-    <state width="1860" height="262" key="GridCell.Tab.0.bottom" timestamp="1602665420625">
+    <state x="691" y="248" key="FileChooserDialogImpl" timestamp="1603175923350">
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
-    <state width="1860" height="262" key="GridCell.Tab.0.bottom/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420625" />
-    <state width="1860" height="262" key="GridCell.Tab.0.center" timestamp="1602665420623">
+    <state x="691" y="248" key="FileChooserDialogImpl/0.20.1920.1060@0.20.1920.1060" timestamp="1603175923350" />
+    <state width="1860" height="262" key="GridCell.Tab.0.bottom" timestamp="1603175925105">
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
-    <state width="1860" height="262" key="GridCell.Tab.0.center/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420623" />
-    <state width="1860" height="262" key="GridCell.Tab.0.left" timestamp="1602665420621">
+    <state width="1860" height="262" key="GridCell.Tab.0.bottom/0.20.1920.1060@0.20.1920.1060" timestamp="1603175925105" />
+    <state width="1860" height="262" key="GridCell.Tab.0.center" timestamp="1603175925104">
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
-    <state width="1860" height="262" key="GridCell.Tab.0.left/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420621" />
-    <state width="1860" height="262" key="GridCell.Tab.0.right" timestamp="1602665420624">
+    <state width="1860" height="262" key="GridCell.Tab.0.center/0.20.1920.1060@0.20.1920.1060" timestamp="1603175925104" />
+    <state width="1860" height="262" key="GridCell.Tab.0.left" timestamp="1603175925104">
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
-    <state width="1860" height="262" key="GridCell.Tab.0.right/0.20.1920.1060@0.20.1920.1060" timestamp="1602665420624" />
+    <state width="1860" height="262" key="GridCell.Tab.0.left/0.20.1920.1060@0.20.1920.1060" timestamp="1603175925104" />
+    <state width="1860" height="262" key="GridCell.Tab.0.right" timestamp="1603175925105">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state width="1860" height="262" key="GridCell.Tab.0.right/0.20.1920.1060@0.20.1920.1060" timestamp="1603175925105" />
+    <state x="145" y="40" key="new project wizard" timestamp="1602665459596">
+      <screen x="0" y="20" width="1920" height="1060" />
+    </state>
+    <state x="145" y="40" key="new project wizard/0.20.1920.1060@0.20.1920.1060" timestamp="1602665459596" />
     <state x="630" y="259" key="refactoring.ChangeSignatureDialog" timestamp="1602664470680">
       <screen x="0" y="20" width="1920" height="1060" />
     </state>
