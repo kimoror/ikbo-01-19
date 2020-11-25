@@ -11,15 +11,19 @@ public interface Order {
 
     public String[] itemsNames();
 
-    int itemsQuantity(String itemName);
+    public int itemsQuantity(String itemName);
 
-    int itemsQuantity(MenuItem menuItem);
+    public int itemsQuantity(MenuItem menuItem);
+
+    public int itemsQuantity();
 
     boolean remove(String name);
-
-    public int countOfItems();
 
     boolean removeAll();
 
     public int countOf(String itemName);
+
+    public Customer getCustomer();
+
+    public void setCustomer(Customer customer);
 }
